@@ -92,7 +92,7 @@ button:hover{
   cursor: pointer;
 }
 
-#twit-icon{
+#twit-icon, img{
   color: white;
   width: 25px;
   height: 25px;
