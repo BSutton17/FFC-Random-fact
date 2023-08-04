@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-//import facts from "./assets/facts.json";
-import { FaTwitter } from "react-icons/fa";
+import facts from "./assets/facts.json";
+//import { FaTwitter } from "react-icons/fa";
 
 interface Fact {
   fact: string;
