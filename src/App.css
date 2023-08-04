@@ -73,14 +73,14 @@ button{
  border: none;
 }
 
-img{
+a{
   position: relative;
   left: 10px;
   width: 30px;
   height: 30px;
 }
 
-button, img{
+button, a{
   background-color: #1DA1F2;
   display: flex;
   align-items: center;
@@ -94,10 +94,10 @@ button:hover{
 
 #twit-icon, img{
   color: white;
-  width:70px;
-  height: 70px;
+  width:75px;
+  height: 75px;
   position: absolute;
-  left: 5%;
+  left: 15%;
 }
   
 
