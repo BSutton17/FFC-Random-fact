@@ -34,7 +34,7 @@ function App() {
                 href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${fact.fact}`}
                 id="tweet-quote"
               >
-                <img src="cdn-icons-png.flaticon.com/512/124/124021.png" id="twit icon"/>
+                text
               </a>
             </div>
             <div>
