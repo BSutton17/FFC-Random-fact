@@ -34,7 +34,7 @@ function App() {
                 href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${fact.fact}`}
                 id="tweet-quote"
               >
-                Tweet
+                <p>Tweet</p>
               </a>
             </div>
             <div>
