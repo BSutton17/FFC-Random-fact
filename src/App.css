@@ -73,14 +73,14 @@ button{
  border: none;
 }
 
-a{
+img{
   position: relative;
   left: 10px;
   width: 30px;
   height: 30px;
 }
 
-button, a{
+button, img{
   background-color: #1DA1F2;
   display: flex;
   align-items: center;
