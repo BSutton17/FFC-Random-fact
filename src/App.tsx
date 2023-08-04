@@ -1,67 +1,54 @@
-import { useState } from 'react'
-import './App.css'
-import ReactMarkdown from "react-markdown"
+import { useState } from "react";
+import "./App.css";
+import facts from "./assets/facts.json";
+import { FaTwitter } from "react-icons/fa";
 
-const defaultMarkdownText = `
-# Heading 1
-
-## Sub Heading 1
-
-This is a paragraph with some **bolded text**.
-
-### Sub Heading 2
-
-Here's a [link to OpenAI](https://openai.com/).
-
-#### Sub Heading 3
-
-Inline code: \`print("Hello, World!")\`
-
-##### Sub Heading 4
-
-Code block:
-    def factorial(n):
-    if n == 0:
-    return 1
-    else:
-    return n * factorial(n-1)
-
-    List:
-    - Item 1
-    - Item 2
-    - Item 3
-    
-    > Blockquote: The best way to predict the future is to invent it. - Alan Kay
-
-There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
-
-![React Logo w/ Text](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png)
-
-- And of course there are lists.
-  - Some are bulleted.
-      - With different indentation levels.
-        - That look like this.
-
-That's it!
-
-`
-function App() {
-  const [text, setText] = useState<string>(defaultMarkdownText)
-  return (
-    <>
-      <div>
-        <h1 id="title">Markdown Code Editor</h1>
-        <textarea value={text} onChange={(e) => setText(e.target.value)}placeholder="Enter Markdown Text Here..." id="editor">
-        
-        </textarea>
-        <div id="preview">
-          <ReactMarkdown>{text}</ReactMarkdown>
-        </div>
-        <footer>Created by Bryson Sutton</footer>
-      </div>
-    </>
-  )
+interface Fact {
+  fact: string;
+  author: string;
 }
 
-export default App
+// select a random fact from the facts file
+const getRandomFact = (): Fact => {
+  return facts[Math.floor(Math.random() * facts.length)];
+};
+
+function App() {
+  const [fact, setFact] = useState<Fact>(getRandomFact());
+  // when called, will change the state of "fact" to a new fact
+  const ChangeFact = () => {
+    setFact(getRandomFact());
+  };
+  return (
+    <>
+      <div id="wrapper" className="center">
+        <div id="quote-box">
+          <h1>Fun Fact Generator </h1>
+          <div id="text" className="fade-in-text">
+            <p>{fact.fact}</p>
+            <div id="buttons">
+              <button type="button" onClick={ChangeFact} id="new-quote">
+                Generate Fact
+              </button>
+              <a
+                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${fact.fact}`}
+                id="tweet-quote"
+              >
+                <FaTwitter id="twit-icon" />
+              </a>
+            </div>
+            <div>
+              <p id="author">Created by {fact.author}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        All Facts Generated From "125 Interesting Facts About Practically
+        Everything" by Elizabeth Yuko
+      </footer>
+    </>
+  );
+}
+
+export default App;
