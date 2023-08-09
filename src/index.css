@@ -13,21 +13,21 @@
 
 @media (max-width: 450px){
   #quote-box{
-     width: 400px;
-     min-height: 275px;
-    margin-left: 20px;
+    width: 400px;
+    min-height: 275px;
+    margin-left: 10px;
   }
   body{
     overflow-x: hidden;
   }
   a{
   position: relative;
-  left: 10px;
+  left: 0px;
   bottom: 20px;
 }
   button{
     position: relative;
-    left: 290px;
+    left: 280px;
     top: 30px;
   }
 }
