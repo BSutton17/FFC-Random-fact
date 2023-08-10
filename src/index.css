@@ -23,12 +23,12 @@
   a{
   position: relative;
   left: 5px;
-  bottom: 10px;
+  bottom: 5px;
 }
   button{
     position: relative;
     color: black;
-    left: 250px;
-    top: 30px;
+    left: 260px;
+    top: 25px;
   }
 }
