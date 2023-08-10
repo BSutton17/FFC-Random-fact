@@ -17,6 +17,9 @@
     min-height: 265px;
     margin-left: 0px;
   }
+  #text{
+    min-height: 250px;
+  }
   body{
     overflow-x: hidden;
   }
