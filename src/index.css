@@ -15,7 +15,7 @@
   #quote-box{
     width: 375px;
     min-height: 265px;
-    margin-left: 0px;
+    margin-left: 5px;
   }
   #text{
     min-height: 250px;
@@ -25,13 +25,14 @@
   }
   a{
   position: relative;
-  left: 10px;
+  left: 15px;
   bottom: 5px;
 }
   button{
     position: relative;
     color: black;
-    left: 285px;
+    width: 40%;
+    left: 290px;
     top: 40px;
   }
   footer{
