@@ -15,20 +15,20 @@
   #quote-box{
     width: 400px;
     min-height: 275px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   body{
     overflow-x: hidden;
   }
   a{
   position: relative;
-  left: 0px;
-  bottom: 20px;
+  left: 5px;
+  bottom: 10px;
 }
   button{
     position: relative;
     color: black;
-    left: 280px;
+    left: 275x;
     top: 30px;
   }
 }
