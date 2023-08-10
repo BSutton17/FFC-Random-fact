@@ -32,10 +32,10 @@
     position: relative;
     color: black;
     width: 25%;
-    left: 270px;
-    top: 75px; /* 150 --> 100*/
+    left: 260px;
+    top: 60px; /* 150 --> 100*/
   }
   footer{
-  bottom: 5px;
+  bottom: 45px;
 }
 }
