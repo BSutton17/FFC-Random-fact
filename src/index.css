@@ -15,7 +15,7 @@
   #quote-box{
     width: 400px;
     min-height: 275px;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   body{
     overflow-x: hidden;
