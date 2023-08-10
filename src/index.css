@@ -13,8 +13,8 @@
 
 @media (max-width: 450px){
   #quote-box{
-    width: 400px;
-    min-height: 275px;
+    width: 375px;
+    min-height: 265px;
     margin-left: 0px;
   }
   body{
