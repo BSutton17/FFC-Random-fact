@@ -26,14 +26,14 @@
   a{
   position: relative;
   left: 15px;
-  bottom: 15px;
+  bottom: -5px;
 }
   button{
     position: relative;
     color: black;
     width: 30%;
     left: 290px;
-    top: 30px;
+    top: 50px;
   }
   footer{
   bottom: 5px;
