@@ -25,7 +25,7 @@ function App() {
         <div id="quote-box">
           <h1>Fun Fact Generator </h1>
           <div id="text" className="fade-in-text">
-            {/*<p>{fact.fact}</p>*/}
+            <p>{fact.fact}</p>
             <div id="buttons">
               <button type="button" onClick={ChangeFact} id="new-quote">
                 Generate Fact
