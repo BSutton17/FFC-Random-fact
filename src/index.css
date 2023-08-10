@@ -16,25 +16,25 @@
     width: 375px;
     min-height: 265px;
     margin-left: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   body{
     overflow-x: hidden;
   }
   p{
-    margin-top: 15px;
+    margin-top: 25px;
   }
   a{
   position: relative;
   left: 16px;
-  bottom: 0px; /* -25 -- > -20*/
+  bottom: 15px; /* -25 -- > -20*/
 }
   button{
     position: relative;
     color: black;
     width: 25%;
     left: 265px;
-    top: 75px; /* 150 --> 100*/
+    top: 125px; /* 150 --> 100*/
   }
   footer{
   bottom: 145px;
